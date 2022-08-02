@@ -6,7 +6,7 @@ const App = () => {
   const { darkMode } = useSelector((state) => state.darkMode);
   return (
     <div className={clsx({ dark: darkMode })}>
-      <div className="light-body dark:dark-body w-screen h-screen flex justify-center items-center">
+      <div className="light-body dark:dark-body w-screen h-screen p-24">
         <Whatsapp />
       </div>
     </div>
