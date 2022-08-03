@@ -6,10 +6,34 @@ import avatar4 from "../assets/imgs/contact-images/Layer 4.png";
 
 const initialState = {
   contacts: JSON.parse(localStorage.getItem("contacts")) || [
-    { name: "Admin", avatar: avatar1, bio: "React Group", id: 1 },
-    { name: "Olivia William ", avatar: avatar2, bio: "UI & UX", id: 2 },
-    { name: "Mohamed Farag", avatar: avatar3, bio: "React Developer", id: 3 },
-    { name: "Emma James ", avatar: avatar4, bio: "Tester", id: 4 },
+    {
+      name: "Admin",
+      avatar: avatar1,
+      bio: "React Group",
+      id: 1,
+      color: "#97b3dd",
+    },
+    {
+      name: "Olivia William ",
+      avatar: avatar2,
+      bio: "UI & UX",
+      id: 2,
+      color: "#6bb6d7",
+    },
+    {
+      name: "Mohamed Farag",
+      avatar: avatar3,
+      bio: "React Developer",
+      id: 3,
+      color: "#43507f",
+    },
+    {
+      name: "Emma James ",
+      avatar: avatar4,
+      bio: "Tester",
+      id: 4,
+      color: "#6b76aa",
+    },
   ],
 };
 const contactsSlice = createSlice({
